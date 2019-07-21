@@ -71,15 +71,35 @@ class MyHomePage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                         color: Colors.purple,
-
                       ),
                     ),
                   ),
-                  Column(
-                    children: <Widget>[
-                      Text(tx.title),
-                      Text(tx.date.toString())
-                    ],
+                  Container(
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 15,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          tx.title,
+                          style: TextStyle(
+                            color: Colors.purple,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          tx.date.toString(),
+                          style: TextStyle(
+                            color: Colors.purple,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
