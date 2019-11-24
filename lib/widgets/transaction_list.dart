@@ -12,7 +12,7 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 500,
+      height: 450,
       child: transactions.isEmpty
           ? Column(
               children: <Widget>[
@@ -50,7 +50,7 @@ class TransactionList extends StatelessWidget {
                         ),
                       ),
                     ),
-                    title: Text(
+                    title: Text( 
                       transactions[index].title,
                       style: Theme.of(context).textTheme.title,
                     ),
